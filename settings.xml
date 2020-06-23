@@ -1,0 +1,19 @@
+<settings>
+ <servers>
+  <server>
+   <!-- this id should match the id of the repo server in pom.xml -->
+   <id>nexus</id>
+   <username>admin</username>
+   <password>Nexusadmin</password>
+  </server>
+  </servers>
+
+  <mirrors>
+    <mirror>
+      <id>nexus</id>
+      <name>central</name>
+      <url>http://localhost:8081/repository/maven-central/</url>
+      <mirrorOf>*</mirrorOf>
+    </mirror>
+  </mirrors>
+</settings>
